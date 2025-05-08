@@ -30548,7 +30548,7 @@ fi
 { printf "%s\n" "$as_me:${as_lineno-$LINENO}: result: $sudo_cv_var_gnu_ld_anon_map" >&5
 printf "%s\n" "$sudo_cv_var_gnu_ld_anon_map" >&6; }
     if test "$sudo_cv_var_gnu_ld_anon_map" = "yes"; then
-	LT_LDDEP="\$(shlib_map)"; LT_LDEXPORTS="-Wl,--version-script,\$(shlib_map)"
+	LT_LDDEP="\$(shlib_map)"; LT_LDEXPORTS="--version-script,\$(shlib_map)"
     fi
 else
     case "$host_os" in
